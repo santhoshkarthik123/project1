@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captain Jack Sparrow</title>
+  <style>
+    /* This is a test comment inside style tag */
+    hr {
+      display: block;
+      margin-top: 0.5;
+      margin-bottom: 0.5;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: solid;
+      border-width: 1px;
+      color: grey;
+    }
+
+    body {
+      font-family: SF Pro display;
+    }
+
+    th {
+      font-weight: bold;
+      font-style: oblique 50deg;
+    }
+
+    form.formformat {
+      display: table;
+      padding: 50px;
+    }
+
+    div.divformat {
+      display: table-row;
+    }
+
+    .formelementstablecellarrange {
+      display: table-cell;
+      margin-bottom: 10px;
+    }
+
+    .bgclr {
+      background: linear-gradient(red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%);
+    }
+
+    @font-face {
+      font-family: "MyFont";
+      src: local("New York"),
+        /* If first font installed,use it, else use second if available,else third if available,else fourth if available,.. */
+        local("SF pro rounded"),
+        url("Fonts/Sacramento-Regular.ttf") format("opentype");
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body class="bgclr">
+  <img src="jack_sparrow_1.png" alt="Captian Jack Sparrow" style="width:150px; height:150px;display:block;">
+  <h1 style="border:2px inset #45e548; border-radius:5px 7px 8px 9px; display:inline-block;">Captain Jack Sparrow</h1>
+  <br>
+  <!-- This is a test html comment -->
+  <em>Captain of the Ship <strong>"The Pearl"</strong></em>
+  <br>
+  <p>
+    The Most Notorious pirate the world has seen.Loves Rum and Adventures.
+  </p>
+  <hr>
+  <h3 style="color:#44aaee; font-family:arial;">Known Assosiates</h3>
+  <ul>
+    <li>Captain Barbossa</li>
+    <li>Gibbs</li>
+  </ul>
+  <a href="Hobbies.html">Jack's Hobbies</a>
+  <hr>
+  <table cellspacing="5" cellpadding="5">
+    <!-- Using and seperating table content using thead and tbody tags will help in fomatting using css -->
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-family:MyFont; font-weight: bold;">Negotiating</td>
+        <td>♥ ♥ ♥ ♥ ♥</td>
+        <!-- Can be also stated with character code in dec or hex code as below
+        <td> &#9829 &#9829 &#9829 &#9829 &#9829 </td>
+      -->
+      </tr>
+      <tr>
+        <td>Drinking</td>
+        <td>♥ ♥ ♥ ♥ ♥</td>
+      </tr>
+      <tr>
+        <td>Adventuring</td>
+        <td>♥ ♥ ♥ ♥ ♥</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <form class="formformat" action="mailto:hancockof2008@gmail.com" method="post" enctype="text/plain">
+    <!-- enctype is used to convert the sent message to plain text, that is text without special representation for special characters -->
+    <div class="divformat">
+      <label class="formelementstablecellarrange">Your Name:</label>
+      <input class="formelementstablecellarrange" type="text" name="Name" required><br>
+    </div>
+    <div class="divformat">
+      <label class="formelementstablecellarrange">Your Email:</label>
+      <input class="formelementstablecellarrange" type="email" name="Email" required><br>
+    </div>
+    <div class="divformat">
+      <label class="formelementstablecellarrange">Your Message:</label>
+      <textarea class="formelementstablecellarrange" name="Message" style="height:150px;width:250px;" required></textarea>"<br>
+    </div>
+    <div class="divformat">
+      <input type="submit" name="" value="Click here to submit">
+    </div>
+  </form>
+
+</body>
+
+</html>
